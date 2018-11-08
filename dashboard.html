@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test enova</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+  </head>
+  <body>
+
+    <header>
+      <div class="crd_header flex align_i_center">
+        <div class="item cursor_pointer" id="open_sidemenu">
+          <i class="fas fa-th"></i>
+          Boards
+        </div>
+
+        <div class="item">
+          <i class="fas fa-search"></i>
+          <input type="text" name="search" value="" placeholder="Search ...">
+        </div>
+      </div>
+
+      <div id="user_options" class="crd_header flex align_i_center">
+        <div>
+          <i class="fas fa-user cdr_user vertical_align_m"></i>
+          <span class="vertical_align_m">Hello, Anna!</span>
+        </div>
+
+        <div>
+          <i class="far fa-bell"></i>
+        </div>
+
+        <div class="menu"><i class="fas fa-bars"></i></div>
+      </div>
+
+    </header>
+
+    <section id="side_menu">
+      <div id="close_sidemenu"><i class="fas fa-times"></i></div>
+
+    </section>
+
+    <section class="parent flex space_btw align_i_center">
+      <div class="title medium flex align_i_center">
+        <div class="wrapper_star"><i class="fas fa-star"></i></div>
+
+        <div class="text">
+          <div>Planner Board - Summary</div>
+          <div>Netguru</div>
+        </div>
+      </div>
+
+      <div class="tabs medium">
+        <span class="active cursor_pointer">Board stats</span>
+        <span class="cursor_pointer">My stats</span>
+      </div>
+
+      <div class="close medium"><i class="fas fa-times"></i></div>
+    </section>
+
+    <section class="parent flex">
+      <div class="medium wrapper">
+        <div class="cdr">
+          tasks completed
+          <img src="circle.png" class="graficas">
+        </div>
+      </div>
+
+      <div class="big wrapper">
+        <div class="cdr">
+          recent activity
+          <img src="data.png" class="graficas" style="width: 77%;">
+        </div>
+      </div>
+
+      <div class="medium wrapper">
+        <div class="cdr">
+          summaryalign_i_center
+          <img src="circle.png" class="graficas">
+        </div>
+      </div>
+    </section>
+
+    <section class="parent flex">
+      <div class="medium wrapper">
+        <div class="cdr">
+          <div class="title_activity">users activity</div>
+
+          <div class="flex user_activity">
+            <div class="flex3">
+              <i class="fas fa-user cdr_user vertical_align_m"></i>
+              <span class="vertical_align_m">persona n1</span>
+            </div>
+            <div class="flex1">2 min ago</div>
+            <div class="flex4">
+              <div class="line_g grey_line">
+                <div class="line_g blue_line" style="width: 30%;"></div>
+                <div class="line_g red_line" style="width: 20%;"></div>
+              </div>
+            </div>
+            <div class="flex1">12/24</div>
+          </div>
+
+          <div class="flex user_activity">
+            <div class="flex3">
+              <i class="fas fa-user cdr_user vertical_align_m"></i>
+              <span class="vertical_align_m">persona n2</span>
+            </div>
+            <div class="flex1">3 min ago</div>
+            <div class="flex4">
+              <div class="line_g grey_line">
+                <div class="line_g blue_line" style="width: 38%;"></div>
+                <div class="line_g red_line" style="width: 25%;"></div>
+              </div>
+            </div>
+            <div class="flex1">15/24</div>
+          </div>
+
+          <div class="flex user_activity">
+            <div class="flex3">
+              <i class="fas fa-user cdr_user vertical_align_m"></i>
+              <span class="vertical_align_m">persona n3</span>
+            </div>
+            <div class="flex1">4 min ago</div>
+            <div class="flex4">
+              <div class="line_g grey_line">
+                <div class="line_g blue_line" style="width: 41%;"></div>
+                <div class="line_g red_line" style="width: 28%;"></div>
+              </div>
+            </div>
+            <div class="flex1">18/24</div>
+          </div>
+
+          <div class="flex user_activity">
+            <div class="flex3">
+              <i class="fas fa-user cdr_user vertical_align_m"></i>
+              <span class="vertical_align_m">persona n4</span>
+            </div>
+            <div class="flex1">5 min ago</div>
+            <div class="flex4">
+              <div class="line_g grey_line">
+                <div class="line_g blue_line" style="width: 44%;"></div>
+                <div class="line_g red_line" style="width: 31%;"></div>
+              </div>
+            </div>
+            <div class="flex1">21/24</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="medium wrapper">
+        <div class="cdr">
+          <div class="title_activity">last tasks</div>
+
+          <div class="flex tasks">
+            <div class="item flex flex1">
+              <input type="checkbox" id="cbox2" value="first_checkbox">
+              <div class="text">
+                <div>Texto superior</div>
+                <div>Texto inferior</div>
+              </div>
+              <span>1 day</span>
+            </div>
+
+            <div class="item flex flex1">
+              <input type="checkbox" id="cbox2" value="first_checkbox">
+              <div class="text">
+                <div>Texto superior</div>
+                <div>Texto inferior</div>
+              </div>
+              <span>1 day</span>
+            </div>
+          </div>
+
+          <div class="flex tasks">
+            <div class="item flex flex1">
+              <input type="checkbox" id="cbox2" value="first_checkbox">
+              <div class="text">
+                <div>Texto superior</div>
+                <div>Texto inferior</div>
+              </div>
+              <span>1 day</span>
+            </div>
+
+            <div class="item flex flex1">
+              <input type="checkbox" id="cbox2" value="first_checkbox">
+              <div class="text">
+                <div>Texto superior</div>
+                <div>Texto inferior</div>
+              </div>
+              <span>1 day</span>
+            </div>
+          </div>
+
+          <div class="flex tasks">
+            <div class="item flex flex1">
+              <input type="checkbox" id="cbox2" value="first_checkbox">
+              <div class="text">
+                <div>Texto superior</div>
+                <div>Texto inferior</div>
+              </div>
+              <span>1 day</span>
+            </div>
+
+            <div class="item flex flex1">
+              <input type="checkbox" id="cbox2" value="first_checkbox">
+              <div class="text">
+                <div>Texto superior</div>
+                <div>Texto inferior</div>
+              </div>
+              <span>1 day</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script
+  defer
+  src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+  integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+  crossorigin="anonymous"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+
+</html>
