@@ -24,6 +24,7 @@ img{
 
 .flex{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex1{
@@ -81,6 +82,9 @@ input{
   cursor: pointer
 }
 
+.pos_relative{
+  position: relative;
+}
 /* contenido */
 
 .parent{
@@ -257,4 +261,147 @@ header .crd_header .item:first-child{
   right: 20px;
   top: 20px;
   cursor: pointer;
+}
+
+#user_information{
+  margin-bottom: 30px;
+}
+
+/* AREA DE MEDIAQUERY */
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+  .parent .big,
+  .parent .medium{
+    flex: 0 0 100%;
+    margin-top: 25px;
+  }
+
+  .cdr{
+    margin: 0;
+  }
+
+  .parent{
+    margin-top: 0;
+  }
+
+  .user_activity .flex1,
+  .cdr,
+  .tasks,
+  .parent .tabs span{
+    font-size: 1.9vw;
+  }
+
+  .user_activity .flex1{
+    flex: 0 0 33%;
+    text-align: right;
+  }
+
+  .user_activity .flex4{
+    flex: 0 0 66%;
+  }
+
+  .user_activity .flex3{
+    font-size: 2vw;
+    flex: 0 0 66%;
+  }
+
+  .line_g{
+    height: 6px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .user_activity{
+    margin-top: 30px;
+  }
+
+  .tasks .item span{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .tasks .item input{
+    flex: 0 0 10%;
+    margin: 0;
+  }
+
+  .tasks .item .text{
+    flex: 0 0 90%;
+  }
+
+  .tasks {
+    margin-top: 36px;
+  }
+
+  .current_user{
+    display: none;
+  }
+
+  #busqueda{
+    display: none;
+  }
+
+  #user_options{
+    margin-left: 0;
+    padding-left: 0;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #notifications{
+    margin-left: 0;
+    padding-right: 15px;
+    font-size: 2.5vw;
+  }
+
+  .menu{
+    font-size: 2.5vw;
+    padding: 20px 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #open_sidemenu{
+    font-size: 2.5vw;
+  }
+
+  .parent .close{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin: 0;
+    font-size: 2.5vw;
+    padding: 5px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .menu,
+  #open_sidemenu,
+  #notifications,
+  .parent .close{
+    font-size: 5vw;
+  }
+
+  .tasks .item span{
+    margin-top: 10px;
+  }
+
+  .user_activity .flex1,
+  .cdr,
+  .tasks,
+  .parent .tabs span{
+    font-size: 3.8vw;
+  }
+
+  .user_activity .flex3{
+    font-size: 4.1vw;
+  }
+
 }
